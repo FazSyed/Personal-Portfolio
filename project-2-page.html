@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone using React</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+    <!-- Header -->
+
+    <header>
+        <nav>
+            <a href="#home" class="logo">Fazilah&nbsp;<span>Syed</span></a>
+            <ul id="navLinks">
+                <i class='bx bx-x' id="close-btn" onclick="hideMenu()"></i>
+                <li><a href="index.html#home" target="_blank">HOME</a></li>
+                <li><a href="index.html#education" target="_blank">EDUCATION</a></li>
+                <li><a href="index.html#skills" target="_blank">SKILLS</a></li>
+                <li><a href="index.html#projects" target="_blank">PROJECTS</a></li>
+                <li><a href="index.html#contact" target="_blank">CONTACT</a></li>
+            </ul>
+            <i class='bx bx-menu' id="menu-btn" onclick="showMenu()"></i>
+        </nav>
+    </header>
+
+    <!-- Project Details Section -->
+
+    <section class="project-page">
+        <div class="project-page-heading">
+            <h4>Instagram Clone using React</h4>
+            <a href="https://instagram-clone-83704.web.app/" target="_blank">Preview</a>
+        </div>
+
+        <div class="project-page-date">
+            <span>August 2024</span>
+        </div>
+
+        <div class="project-page-lang">
+            <p>React.js, HTML, CSS, Firebase, Material-UI</p>
+        </div>
+
+        <div class="project-page-description">
+            <p>A clone of Instagram enabling user interactions through authentication and real-time features.</p>
+        </div>
+
+        <div class="project-page-cube">
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/images/science.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/html-5.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/css-3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/firebase.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="project-page-features">
+            <ul>
+                <li>User authentication (sign-in and sign-up).</li>
+                <li>Image uploads with captions and comments.</li>
+                <li>Real-time database storage using Firebase.</li>
+            </ul>
+        </div>
+
+        <div class="project-page-link">
+            <a href="https://github.com/FazSyed/react-instagram-clone" target="_blank">Github Link</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="footer-icons">
+            <a href="https://github.com/FazSyed" target="_blank" class="home-btn"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/fazilah-syed/" target="_blank" class="home-btn"><i
+                    class='bx bxl-linkedin'></i></a>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="index.html#home" target="_blank">About Me</a></li>
+                <li><a href="index.html#education" target="_blank">Education</a></li>
+                <li><a href="index.html#skills" target="_blank">Skills</a></li>
+                <li><a href="index.html#projects" target="_blank">Projects</a></li>
+                <li><a href="index.html#contact" target="_blank">Contact Me</a></li>
+            </ul>
+        </div>
+        <div class="footer-text">
+            &copy; Fazilah Syed | All Rights Reserved
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript Code -->
+    <script src="assets/script.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cube",
+            grabCursor: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
