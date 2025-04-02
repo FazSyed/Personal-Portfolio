@@ -311,12 +311,13 @@
                 </div>
             </div>
             <div class="contact-box">
-                <form action="form_handler.php" method="post">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="df521d94-cb72-4d58-910c-682f22aa480a">
                     <input type="text" name="name" placeholder="Enter your Name" required>
                     <input type="email" name="email" placeholder="Enter your Email" required>
                     <input type="text" name="subject" placeholder="Enter your Subject" required>
                     <textarea rows="8" name="message" placeholder="Enter your Message" required></textarea>
-                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                    <button type="submit">Send Message</button>
                 </form>
             </div>
         </div>
